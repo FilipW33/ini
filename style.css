@@ -1,0 +1,159 @@
+/*global setings*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #060806; /*kolo użyty: nav*/
+    --blue: #8288c2;
+}
+html{
+    font-size: 10px;
+    overflow-x: hidden;
+}
+body{
+	display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0;
+    width: 100vw;
+    background-color: white;
+    align-items: center;
+}
+/*Nav setings and logo*/
+.logo{
+    height: 25em;
+}
+#pomyslkacpa{
+    height: 8vh;
+}
+nav{
+    
+    width:100vw;
+    height: 10vh;
+    background-color: #020a3c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding: 2em;
+    position: relative;
+    color: aliceblue;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    width: 55%;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+    position: relative;
+    padding: .2em;
+    color: white;
+}
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    background-color: white;
+    height: .15em;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+a:hover::after {
+    width: 100%;
+}
+#wrapper{
+    margin: 0;
+    max-width: 1400px;
+    height: auto;
+   
+}
+
+.img{
+    margin:0;
+    height: 77em;
+}
+
+footer{
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    height: 53px;
+    width:100vw;
+    border-top: 2px solid white;
+    padding: 2em;
+    color: white;
+}
+/*nav respo i burger*/
+.burger{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: none;
+}
+.line{
+    width: 3em;
+    height: .3em;
+    background: var(--blue);
+    margin: .9em;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+
+
+#to {
+    align-items: center;
+   width: 1400px;
+    height: 600px; /* Każda sekcja zajmuje 30% wysokości wrappera */
+    color: white;
+	background:#060806;
+    margin:0;
+    text-align: center;
+}
+
+#mid {
+    padding: 40px;
+    margin-top:50px;
+    color: aliceblue;
+    align-items: center;
+    width: 1400px;
+    max-height: 400px; /* Każda sekcja zajmuje 10% wysokości wrappera */
+    background-color: #060806;
+    margin:0;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+#mm{
+    padding: 30px;
+    width: 1400px;
+    color: aliceblue;
+    background-color: #060806;
+    margin:0;
+    text-align: center;
+    border-bottom: 2px solid white;
+    height: 200px;
+}
+
+#bot {
+    align-items: center;
+    max-width: 1400px;
+    max-height: 300px; /* Każda sekcja zajmuje 60% wysokości wrappera */
+    background-color: #060806;
+    margin:0;
+    text-align: center;
+}
+
+
+
+

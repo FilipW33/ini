@@ -1,0 +1,237 @@
+/*style.css media*/
+
+@media only screen and (max-width: 1000px) {
+    
+    .burger {
+        display: block;
+        transition: .3s ease-in-out;
+    }
+    .burger.active .line:first-child{
+        transform: translateY(-300px);
+        
+    }
+    .burger.active .line:nth-child(2){
+        transform: rotate(-405deg) translateY(9px); 
+        
+    }
+    .burger.active .line:nth-child(3){
+        transform: rotate(-322deg) translateY(-9px); 
+        
+    }
+    
+    ul{
+        position: absolute;
+        right: 0;
+        top: 8vh;
+        background: #c9eef5;
+        height: 92vh;
+        flex-direction: column;
+        text-align: center;
+        transform: translate(100%);
+        transition: .3s ease-in-out;
+        
+        
+    }
+    ul.active{
+        transform: translate(0%);
+        border: 1px solid black;
+        border-right: none;
+    }
+    a{
+        color: black;
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        
+    }
+    ul li a {
+    color: black;
+    font-size: 2.5rem;
+    border-bottom: 100%;
+    letter-spacing: 2px;
+    border-bottom: 4px solid white; /* dodanie białej linii */
+    padding-bottom: 10px; /* opcjonalnie, aby zwiększyć odstęp między linią a tekstem */
+}
+
+
+}
+@media only screen and (max-width: 700px){
+    ul{
+        width: 100%;
+    }
+    footer{
+        height: 53px;
+    }
+}
+
+@media (max-width: 1300px){
+    .logo{
+        height: 5.5em;
+    }
+    
+}
+/* Dla urządzeń o szerokości mniejszej niż 768px (np. tablety i telefony) */
+@media (max-width: 768px) {
+    .logo {
+        height: 5em; /* Mniejsze logo na tabletach */
+    }
+    footer{
+        height: 53px;
+    }
+    
+}
+
+/* Dla urządzeń o szerokości mniejszej niż 480px (np. telefony) */
+@media (max-width: 480px) {
+    .logo {
+        height: 4.5em; /* Jeszcze mniejsze logo na małych ekranach */
+    }
+    footer{
+        height: 53px;
+    }
+    
+}
+
+/* Dla bardzo małych urządzeń, takich jak iPhone SE */
+@media (max-width: 375px) {
+    .logo {
+        height: 4em; /* Najmniejszy rozmiar dla iPhone SE */
+    }
+    footer{
+        height: 53px;
+    }
+}
+
+/*onas-media*/
+@media (max-width: 1300px){
+    
+}
+@media only screen and (max-width: 1000px) {
+}
+@media (max-width: 768px) {
+   
+}
+@media (max-width: 700px){
+  
+}
+
+/* Dla urządzeń o szerokości mniejszej niż 480px (np. telefony) */
+@media (max-width: 480px) {
+    .navnap{
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #onasp{
+        align-items: center;
+        margin: 0;
+        padding-top: 47px;
+    }
+    
+}
+@media (max-width: 360px){
+    
+}
+
+/*strefa studenta-media*/
+@media (max-width: 1300px){
+    .logo{
+        height: 5.5em;
+    }
+    
+}
+@media only screen and (max-width: 1000px) {
+}
+@media (max-width: 768px) {
+    #contactForm {
+        max-width: auto;
+        padding: 10px; /* Mniejsza padding dla urządzeń mobilnych */
+    }
+
+    #b {
+        padding: 10px;
+    }
+
+    #t{
+        height: auto;
+    }
+   #title{
+        align-items: center;
+        margin: 0;
+        padding-top: 47px;
+    }
+}
+@media (max-width: 700px){
+    ul{
+        width: 100%;
+    }
+    footer{
+        height: 53px;
+    }
+    #title{
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 60px;
+    }
+}
+
+/* Dla urządzeń o szerokości mniejszej niż 480px (np. telefony) */
+@media (max-width: 480px) {
+     .student{
+        font-size: 16.5px;
+        margin-bottom: 2px;
+    }
+     #contactForm {
+        max-width: auto;
+        padding: 5px; /* Mniejsza padding dla urządzeń mobilnych */
+    }
+    #title{
+        align-items: center;
+        margin: 0;
+        padding-top: 47px;
+    }
+}
+
+@media (max-width: 375px) {
+    .student{
+        font-size: 16.5px;
+        margin-bottom: 2px;
+    }
+     #contactForm {
+        max-width: auto;
+        padding: 5px; /* Mniejsza padding dla urządzeń mobilnych */
+    }
+    #title{
+        align-items: center;
+        margin: 0;
+        padding-top: 47px;
+    }
+    #hone{
+        padding: 10px;
+        font-size: 30px;
+    }
+    #mone{
+        font-size: 30px;
+    }
+    #bone{
+        font-size: 30px;
+    }
+    
+}
+@media (max-width: 360px){
+    .student{
+        font-size: 15.5px;
+        margin-bottom: 2px;
+    }
+     #contactForm {
+        max-width: auto;
+        padding: 5px; /* Mniejsza padding dla urządzeń mobilnych */
+    }
+    #title{
+        align-items: center;
+        margin: 0;
+        padding-top: 47px;
+    }
+   
+}
