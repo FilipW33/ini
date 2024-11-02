@@ -13,12 +13,13 @@ html{
     overflow-x: hidden;
 }
 body{
+    overflow-x: hidden;
 	display: flex;
     flex-direction: column;
     height: auto;
     margin: 0;
     width: 100vw;
-    background-color: white;
+    background-color: grey;
     align-items: center;
 }
 /*Nav setings and logo*/
@@ -57,6 +58,10 @@ a {
     padding: .2em;
     color: white;
 }
+section { 
+    width: 100%;
+    margin: 0 auto;
+}
 a::after {
     content: '';
     position: absolute;
@@ -72,7 +77,7 @@ a:hover::after {
     width: 100%;
 }
 #wrapper{
-    margin: 0;
+    margin: 0 auto;
     max-width: 1400px;
     height: auto;
    
@@ -113,8 +118,9 @@ footer{
 
 
 #to {
+    width: 100%;
     align-items: center;
-   width: 1400px;
+    max-width: 1400px;
     height: 600px; /* Każda sekcja zajmuje 30% wysokości wrappera */
     color: white;
 	background:#060806;
@@ -123,33 +129,37 @@ footer{
 }
 
 #mid {
+    width: 100%;
     padding: 40px;
     margin-top:50px;
     color: aliceblue;
     align-items: center;
-    width: 1400px;
-    max-height: 400px; /* Każda sekcja zajmuje 10% wysokości wrappera */
-    background-color: #060806;
+    max-width: 1400px;
+    height: 400px; /* Każda sekcja zajmuje 10% wysokości wrappera */
+    background-color: #081652;
     margin:0;
     text-align: center;
     border-bottom: 2px solid white;
 }
-#mm{
+
+#mmm{
     padding: 30px;
-    width: 1400px;
+    width: 100%;
+    max-width: 1400px;
     color: aliceblue;
-    background-color: #060806;
+    background-color: #081652;
     margin:0;
     text-align: center;
-    border-bottom: 2px solid white;
+    
     height: 200px;
 }
 
 #bot {
+    width: 100%;
     align-items: center;
     max-width: 1400px;
-    max-height: 300px; /* Każda sekcja zajmuje 60% wysokości wrappera */
-    background-color: #060806;
+    height: 300px; /* Każda sekcja zajmuje 60% wysokości wrappera */
+    background-color: #081652;
     margin:0;
     text-align: center;
 }
