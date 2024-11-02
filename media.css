@@ -3,7 +3,7 @@
 @media only screen and (max-width: 1000px) {
     
     .burger {
-        display: block;
+        display: absolute;
         transition: .3s ease-in-out;
     }
     .burger.active .line:first-child{
